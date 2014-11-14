@@ -1,0 +1,4 @@
+CodernityDB==0.4.2
+yapsy==1.10.423
+jinja==1.2
+PyYAML==3.11
