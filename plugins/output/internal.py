@@ -1,0 +1,2 @@
+class InternalDBOutputPlugin():
+    pass
