@@ -1,0 +1,62 @@
+common:
+  required: true
+  type: dict
+  schema:
+    input:
+      type: dict
+      keyschema:
+        cls:
+          type: string
+          required: true
+        config:
+          type: dict
+          required: true
+        index:
+          type: string
+          required: true
+        schema:
+          type: dict
+          required: true
+          keyschema:
+            type: string
+            allowed:  
+              - string
+              - int
+              - raw
+    output:
+      type: dict
+      keyschema:
+        cls:
+          type: string
+          required: true
+        config:
+          type: dict
+          required: true
+    mutators:
+      type: dict
+      keyschema:
+        cls:
+          type: string
+          required: true
+        config:
+          type: dict
+          required: true
+chains:
+  required: true
+  type: dict
+  keyschema:
+    type: dict
+    schema:
+      description:
+        type: string
+        required: false
+      source:
+        type: string
+        required: true
+      target:
+        type: string
+        required: true
+      mutators:
+        type: dict
+        keyschema:
+

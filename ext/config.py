@@ -1,11 +1,12 @@
 import yaml
 import logging
 from configure import Configuration, ConfigurationError
+from cerberus import Validator
 
 logger = logging.getLogger(__name__)
 
-def validate_config(config_path):
-    try:
-        config = Configuration.from_file(config_path)
-        except ConfigurationError as
+class DEConfigValidator(Validator):
+    def _validate_defined(self, defined, field, value):
+        pass
+
 

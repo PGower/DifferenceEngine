@@ -1,3 +1,4 @@
+pyyaml
 CodernityDB==0.4.2
 jinja==1.2
 configure==0.5
